@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>QR Generator</title>
+  </head>
+  <body>
+    <div class="heading">
+      <p>QR Generator</p>
+    </div>
+
+    <div class="mainBox">
+      <label for="qrInput"> Enter Text or URL: </label> <br />
+      <br />
+      <input
+        type="text"
+        placeholder="e.g., Hello world! or https:www.example.com"
+        id="text"
+      />
+      <br />
+      <br />
+      <div class="button-group">
+        <button onclick="generateQRCode()">Generate</button>
+        <a id="downloadLink" download="qr-code.png">
+          <button style="display: none" id="downloadBtn">Download</button>
+        </a>
+      </div>
+
+      <div id="qrcode">
+        <img src="" alt="QR Code" id="qrImage" style="display: none" />
+        <p
+          style="color: rgb(154, 154, 64); font-size: 10px; padding: 70px 0"
+          id="qrText"
+        >
+          Your QR Code will display here
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  <footer >
+<p>&copy; <span id="currentYear"></span>QR Generator by <a href="https://www.linkedin.com/in/diya-dutta-463b25334?" target="_blank" rel="noopener noreferrer" style="color:rgb(7, 188, 7);text-decoration: none;">Diya</a>.All rights reserved.</p>
+<p>Made with <span id="redNote">&#x2764; </span>in India.</p>
+  </footer>
+</html>
