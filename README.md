@@ -1,7 +1,5 @@
 # QR Generator
 
-![QR Generator Screenshot]
-
 
 A simple and responsive web-based QR Code Generator built with HTML, CSS, and JavaScript. This tool allows users to convert any text or URL into a scannable QR code, with options to download the generated image and share it across various platforms.
 
